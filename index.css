@@ -1,0 +1,28 @@
+nav {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+nav ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ width: 60px;
+ align-items: center;
+}
+
+li a {
+    display: inline;
+}
+
+
+nav > a {
+ width: 200px;
+ background-color: blue;
+ color: white;
+ position: absolute;
+ right: 0;
+
+}
+

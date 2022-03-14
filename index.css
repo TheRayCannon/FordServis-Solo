@@ -63,7 +63,7 @@ nav > a {
 }
 
 @media (max-width: 375px) {
-nav {
+nav > img {
  display:none;
  cursor: pointer;
  }
@@ -87,7 +87,7 @@ nav {
 }
 
 .wrapper > div {
-    width: 95%;
+    width: 900px;
     justify-content: space-between;
 }
 
@@ -119,6 +119,8 @@ nav {
 }
 
 .flexRight {
+    width: 450px;
+    height: auto;
     border: 5px;
     border-style: solid;
     border-color: grey;
@@ -168,15 +170,11 @@ nav {
  .Testamony img {
      width: 150px;
      height: 200px;
-
-
-     
  }
 
-
-
-
- 
+ .Testamony > h3 {
+     font-size: x-large;
+ }
  
 /*  This will be the foot */
  .BottomNav { 
@@ -280,4 +278,16 @@ nav {
       border-style: round;
       border-radius: 20px;
       margin-top: 5px;
+  }
+
+  @media (max-width: 375px) {
+    .BottomNav > [alt="fordLogo"]{
+        display: none;
+    }
+  .socialAccounts {
+      width: 100%;
+  }
+  .bottomList{
+      display: none;
+  }
   }

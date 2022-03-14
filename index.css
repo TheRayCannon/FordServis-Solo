@@ -1,13 +1,33 @@
+/* meta */
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+body{
+    font-family: 'Staatliches', cursive;
+}
+a {
+    color: black;
+}
+a:link { 
+  text-decoration: none;
+}
+a:hover{
+    color: rgb(9, 13, 228);
+}
 /* nav bar */
+[alt="fordLogo"] {
+    height: 90px;
+    
+}
 nav {
     display: flex;
-    
     flex-flow: row nowrap;
     width: 100%;
-    position: relative;
     justify-content: space-between;
     align-items: center;
     align-content: center;
+    box-shadow: grey;
+
+
 
 }
 
@@ -15,29 +35,45 @@ header ul {
     list-style-type: none;
     margin: 0;
     width: 500px;
+    justify-content: center;
     
    }
 
  .topNav li {
    display: inline;
    width: 500px;
-   justify-content: space-around;
    padding: 15px;
+   margin-left: 25px;
 
  }
 
 
 nav > a {
- display: flex;
- width: 20px;
- padding: 20px;
- background-color: blue;
- color: white;
- justify-content: center;
- font-size: medium;
+    display: flex;
+    height: 20px; 
+    width: 60px;  
+    padding: 20px;
+    background-color: blue;
+    color: white;
+    justify-content: center;
+    font-size: medium;
+   border-style: round;
+   border-radius: 20px;
 
 }
 
+@media (max-width: 375px) {
+nav {
+ display:none;
+ cursor: pointer;
+ }
+
+.nav-bar {
+  display: block;  
+
+}
+
+}
 
 /* Body */
 
@@ -51,20 +87,23 @@ nav > a {
 }
 
 .wrapper > div {
-    width: 750px;
+    width: 95%;
     justify-content: space-between;
 }
 
 .flexLeft {
+   padding: 10px;
+   margin: 15px;
+   
+   
     
-    background-color: brown;
-    
-
 }
+
 
 .flexLeft img {
     height: 100px;
     width: 200px;
+    margin: 5px;
     
 }
 
@@ -73,58 +112,104 @@ nav > a {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 10px;
-    row-gap: 15px;
+    column-gap:30px;
+    row-gap:25px;
+
     
 }
 
 .flexRight {
-    
-    background-color: aqua;
-    border: 1px;
+    border: 5px;
     border-style: solid;
     border-color: grey;
-    
-
 }
 
 .flexRight img {
-    width: 750px;
+    width: 100%;
+    margin: 0px;
+
 }
+
+.flexRight > .textBox {
+    padding: 25px;
+
+}
+/* small screen flex boxes */
+@media  (max-width: 375px) {
+   .wrapper {
+       display: inline-block
+   }
+
+   .flexLeft ul {
+    width: 350px;
+    list-style: none;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap:3px;
+    row-gap:2px;
+    }
+
+    .flexRight {
+        width: 350px;
+    }
+}
+
+/*Testamony*/
 .Testamony {
     display: flex;
     width: 100%;
-    height: 150px;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
 }
-.Testamony img {
-    height: 200px;
-    justify-content: center;
-    
 
-}
+
+ .Testamony img {
+     width: 150px;
+     height: 200px;
+
+
+     
+ }
+
+
+
+
+ 
  
 /*  This will be the foot */
  .BottomNav { 
      display:flex;
      justify-content: space-between;
-
+    
  }
 
- .BottomNav ul { 
-   padding: 25px;
-   align-self: flex-end;
+ .bottomList {
+     display: flex;
+     justify-content: flex-end;
+     width: 80%;
+     margin: 0px;
+     padding: 0px;
+ }
+
+
+
+ .bottomList ul { 
+   padding: 15px;
    list-style: none;
+   justify-content: flex-end;
+   margin-right: 80px;
+   
+
 
  }
+
 
  .socialAccounts { 
     display: flex;
     flex-flow: row nowrap;
     width: 100%;
-    position: relative;
     justify-content: space-between;
     align-items: center;
     align-content: center;
@@ -145,13 +230,17 @@ nav > a {
 
  }
 
- .BottomNav li ~ li { 
+ .bottomList > ul{
+    padding-left: 50px;
+ }
+
+ .BottomNav li + li { 
     padding-left: 15px;
 
  }
 
  .BottomNav li:first-child { 
-     padding-bottom: 10px;
+     padding-bottom: 5px;
      font-weight: bolder;
  } 
 
@@ -159,3 +248,36 @@ nav > a {
      height: 20px;
      width: 20px;
  }
+
+ .butomButtons {
+    width: 100px;
+    padding: 10px;
+   
+  }
+  
+  .BottomNav .registerButton {
+   display: flex;
+   height: 20px;   
+   padding: 20px;
+   background-color: blue;
+   color: white;
+   justify-content: center;
+   font-size: medium;
+  border-style: round;
+  border-radius: 20px;
+  }
+  
+  .BottomNav .logInButton {
+      display:flex;
+      height: 20px;   
+      padding: 20px;
+      border: 5px;
+      border-color: blue;
+      border-style: solid;
+      color: blue;
+      justify-content: center;
+      font-size: medium;
+      border-style: round;
+      border-radius: 20px;
+      margin-top: 5px;
+  }

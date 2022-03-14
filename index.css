@@ -89,5 +89,40 @@ nav > a {
  .BottomNav ul { 
    padding: 25px;
    align-self: flex-end;
+   list-style: none;
 
  }
+
+ .socialAccounts { 
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+
+ }
+ .socialAccounts li { 
+     display: inline-block;
+     justify-content: flex-end;
+     
+
+ }
+
+
+ .socialAccounts img { 
+    height: 30px;
+    width: 30px;
+
+ }
+
+ .BottomNav li ~ li { 
+    padding-left: 15px;
+
+ }
+
+ .BottomNav li:first-child { 
+     padding-bottom: 10px;
+ } 

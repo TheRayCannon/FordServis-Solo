@@ -51,8 +51,8 @@ nav > a {
 }
 
 .wrapper > div {
-    width: 600px;
-
+    width: 750px;
+    justify-content: space-between;
 }
 
 .flexLeft {
@@ -61,6 +61,23 @@ nav > a {
     
 
 }
+
+.flexLeft img {
+    height: 100px;
+    width: 200px;
+    
+}
+
+.flexLeft ul {
+    list-style: none;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 15px;
+    
+}
+
 .flexRight {
     
     background-color: aqua;
@@ -70,6 +87,10 @@ nav > a {
     
 
 }
+
+.flexRight img {
+    width: 750px;
+}
 .Testamony {
     display: flex;
     width: 100%;
@@ -77,6 +98,12 @@ nav > a {
     justify-content: center;
     align-items: center;
     padding: 20px;
+}
+.Testamony img {
+    height: 200px;
+    justify-content: center;
+    
+
 }
  
 /*  This will be the foot */
@@ -125,4 +152,10 @@ nav > a {
 
  .BottomNav li:first-child { 
      padding-bottom: 10px;
+     font-weight: bolder;
  } 
+
+ .socialAccounts img {
+     height: 20px;
+     width: 20px;
+ }
